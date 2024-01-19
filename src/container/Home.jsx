@@ -7,13 +7,15 @@ import { BsSearch} from "react-icons/bs"
 import { MdHome } from "react-icons/md";
 import { motion } from "framer-motion";
 import { Link,Routes,Route } from "react-router-dom";
-import { Logo } from "../assets";
+import Logo  from "../assets/logo.png";
 import Projects from "./Projects";
 import SignUp from "./SignUp";
+import {UserProfile} from "../components"
+import { useSelector } from "react-redux";
 
 const Home = () => {
   const [sideMenu, setSideMenu] = useState(true);
-  const [user, setuser] = useState(null);
+   const user  = useSelector((state) => state.user?.user)
   return (
     <>
       <div
@@ -47,17 +49,17 @@ const Home = () => {
           {user && (
             <Link
               to={"/home/projects"}
-              className="flex items-center justify-center gap-6"
+              className="flex items-center justify-center gap-2 xl:gap-6"
             >
-              <MdHome className="text-primaryText text-xl" />
-              <p className="text-lg text-primaryText">Home</p>
+              <MdHome className="text-primaryText text-md lg:text-xl" />
+              <p className="text-md lg:text-xl text-primaryText">Home</p>
             </Link>
           )}
         </div>
       </div>
 
       <div className=" flex-1 min-h-screen max-h-screen overflow-y-scroll h-full flex flex-col items-start justify-start  px-2 md:px-12 py-2 md:py-12">
-        <div className=" sm:w-full flex items-center justify-between gap-3 ">
+        <div className=" xs:w-full flex items-center justify-between gap-3 ">
           <div className="border-white border-2 bg-secondary w-full py-2 ml-6 px-3 md:px-4 md:py-3 rounded-md flex items-center justify-center gap-3">
             <BsSearch className="text-sm text-primaryText" />
             <input
@@ -81,7 +83,7 @@ const Home = () => {
             </motion.div>
           )}
 
-          {user && <div></div>}
+          {user && <UserProfile/>}
         </div>
         <div className="w-full">
           <Routes>

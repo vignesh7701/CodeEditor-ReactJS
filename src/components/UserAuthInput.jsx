@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaEyeSlash, FaEye } from "react-icons/fa6";
 
-const UserInput = ({ label, placeHolder, isPwd,  Icon, setState,setEmailState
+const UserAuthInput = ({ label, placeHolder, isPwd,  Icon, setState,setEmailState
 }) => {
   const [value, setValue] = useState("");
   const [show, setshow] = useState(false);
@@ -24,7 +24,7 @@ const UserInput = ({ label, placeHolder, isPwd,  Icon, setState,setEmailState
     <div className="flex flex-col items-start justify-start gap-1">
       <label className="text-sm text-gray-900 font-medium">{label}</label>
       <div
-        className={`flex items-center justify-center gap-3 w-full md:w-96 rounded-md px-2 py-1 bg-slate-400  ${
+        className={`flex items-center justify-center gap-3  w-60  md:w-96 rounded-md px-2 py-1 bg-slate-400  ${
           !emailValid &&
           placeHolder === "Email" &&
           value.length > 0 &&
@@ -36,7 +36,7 @@ const UserInput = ({ label, placeHolder, isPwd,  Icon, setState,setEmailState
           type={isPwd && show ? "password" : "text"}
           placeholder={placeHolder}
           className="flex-1 w-full h-full py-2 outline-none border-none bg-transparent text-secondary text-sm md:text-md placeholder:text-slate-900"
-          Value={value}
+          value={value}
           onChange={handleTextChange}
         />
         {isPwd && (
@@ -46,9 +46,9 @@ const UserInput = ({ label, placeHolder, isPwd,  Icon, setState,setEmailState
             className="cursor-pointer"
           >
             {show ? (
-              <FaEye className="text-black " />
-            ) : (
               <FaEyeSlash className="text-black " />
+            ) : (
+              <FaEye className="text-black " />
             )}
           </motion.div>
         )}
@@ -57,4 +57,4 @@ const UserInput = ({ label, placeHolder, isPwd,  Icon, setState,setEmailState
   );
 };
 
-export default UserInput;
+export default UserAuthInput;
