@@ -108,7 +108,7 @@ const SignUp = () => {
             <motion.div
               onClick={createUser}
               whileTap={{ scale: 0.9 }}
-              className="flex items-center justify-center  w-60  md:w-96 py-2 rounded-md hover:bg-sky-700 bg-sky-900"
+              className="flex items-center justify-center cursor-pointer  w-60  md:w-96 py-2 rounded-md hover:bg-sky-700 bg-sky-900"
             >
               <p className="text-md xl:text-lg  text-white">Sign Up</p>
             </motion.div>

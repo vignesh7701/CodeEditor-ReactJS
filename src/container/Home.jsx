@@ -8,8 +8,7 @@ import { MdHome } from "react-icons/md";
 import { motion } from "framer-motion";
 import { Link,Routes,Route } from "react-router-dom";
 import Logo  from "../assets/logo.png";
-import Projects from "./Projects";
-import SignUp from "./SignUp";
+import { Projects,SignUp } from "./index"
 import {UserProfile} from "../components"
 import { useSelector } from "react-redux";
 
