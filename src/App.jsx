@@ -5,8 +5,10 @@ import { auth } from "./config/firebase.config";
 import Loader from "./components/Loader";
 import { useDispatch } from "react-redux";
 import { SET_USER } from "./context/actions/userActions";
-import { doc, setDoc } from "firebase/firestore";
+import { collection, doc, onSnapshot, orderBy, query, setDoc } from "firebase/firestore";
 import { db } from "./config/firebase.config";
+import { SET_PROJECTS } from "./context/actions/projectActions";
+
 const App = () => {
 
   const navigate = useNavigate();
@@ -33,7 +35,21 @@ const App = () => {
       }, 2000);
     })
     return () => unsubscribe();
-  },[])
+  }, [])
+  
+  useEffect(() => {
+    const projectQuery = query(
+      collection(db, "Projects"),
+      orderBy("id", "desc")
+    );
+    const unsubscribe = onSnapshot(projectQuery, (querSnaps => {
+      const projectsList = querSnaps.docs.map(doc => doc.data())
+      dispatch(SET_PROJECTS(projectsList))
+      }))
+
+    return unsubscribe
+  }, [])
+  
   return (
     <>
       {isLoading ? (

@@ -12,7 +12,7 @@ const UserProfile = () => {
 
   return (
     <div className="flex items-center justify-center gap-4 relative">
-      <div className="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center overflow-hidden rounded-2xl cursor-pointer bg-sky-900">
+      <div className="w-7 h-7 md:w-12 md:h-10 flex items-center justify-center overflow-hidden rounded-lg cursor-pointer bg-sky-600">
         {user?.photoURL ? (
           <>
             <moiton.img
@@ -34,11 +34,11 @@ const UserProfile = () => {
 
       <motion.div onClick={() => setisMenu(!isMenu)}
         whileTap={{ scale: 0.9 }}
-        className="p-2 md:p-4  rounded-md flex items-center justify-center bg-secondary cursor-pointer"
+        className="p-1 md:p-2  rounded-md flex items-center justify-center bg-secondary cursor-pointer"
       >
        { isMenu ?
-        <FaChevronUp className="text-textm" /> :
-        <FaChevronDown className="text-textm" /> }
+        <FaChevronUp className="text-textm text-sm" /> :
+        <FaChevronDown className="text-textm text-sm" /> }
       </motion.div>
 
       <AnimatePresence>
