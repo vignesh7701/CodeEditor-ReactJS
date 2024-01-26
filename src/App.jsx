@@ -42,12 +42,12 @@ const App = () => {
       collection(db, "Projects"),
       orderBy("id", "desc")
     );
-    const unsubscribe = onSnapshot(projectQuery, (querSnaps => {
-      const projectsList = querSnaps.docs.map(doc => doc.data())
+    const unsubscribe = onSnapshot(projectQuery, (querySnaps => {
+      const projectsList = querySnaps.docs.map(doc => doc.data())
       dispatch(SET_PROJECTS(projectsList))
       }))
 
-    return unsubscribe
+    return unsubscribe;
   }, [])
   
   return (

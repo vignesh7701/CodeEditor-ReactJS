@@ -1,7 +1,7 @@
-export const SET_PROJECTS = (user) => {
+export const SET_PROJECTS = (projects) => {
   return {
     type: "SET_PROJECTS",
-    user: user,
+    projects: projects,
   };
 };
 

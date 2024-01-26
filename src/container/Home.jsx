@@ -10,11 +10,19 @@ import { Link,Routes,Route } from "react-router-dom";
 import Logo  from "../assets/logo.png";
 import { Projects,SignUp } from "./index"
 import {UserProfile} from "../components"
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { SET_SEARCH_TERM } from "../context/actions/searchActions";
+
 
 const Home = () => {
   const [sideMenu, setSideMenu] = useState(true);
-   const user  = useSelector((state) => state.user?.user)
+  const user = useSelector((state) => state.user?.user)
+  
+  const searchTerm = useSelector((state) =>
+    state.searchTerm?.searchTerm ? state.searchTerm?.searchTerm : ""
+  );
+
+  const dispatch = useDispatch()
   return (
     <>
       <div
@@ -63,8 +71,10 @@ const Home = () => {
             <BsSearch className="text-sm text-primaryText" />
             <input
               type="text"
+              value={searchTerm}
               className="flex-1 md:px-4 md:py-1 text-sm md:text-lg bg-transparent outline-none border-none text-primaryText placeholder:text-cyan-100"
               placeholder="Search here..."
+              onChange={(e) => dispatch(SET_SEARCH_TERM(e.target.value))}
             />
           </div>
 

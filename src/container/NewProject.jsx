@@ -60,9 +60,9 @@ const NewProject = () => {
 
     }
 
-    await setDoc(doc(db, "Projects", id), _doc).then((res) => {
-      setalert(true)
-    }).catch((err) => console.log(err));
+    await setDoc(doc(db, "Projects", id), _doc)
+      .then((res) => { setalert(true) })
+      .catch((err) => console.log(err));
 
     setInterval(() => {
       setalert(false)
