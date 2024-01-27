@@ -1,0 +1,331 @@
+repo_name: vignesh7701/CodeEditor-Beta
+report_id: 1fb58c4938c28c924b526d951cd4d360
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-27T07:37:04+00:00'
+requested_by: vignesh7701
+provider: github
+branch: main
+detected_tools_count: 24
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta
+  detection_source: Repo Metadata
+- name: Autoprefixer
+  description: PostCSS plugin to parse CSS and add vendor prefixes to CSS rules
+  website_url: https://github.com/postcss/autoprefixer
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/2202/72d087642cfce6fef6f2dabec5bf49e8_400x400.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-16 18:23:24.000000000 Z
+- name: PostCSS
+  description: Transform CSS with JS plugins
+  website_url: https://github.com/postcss/postcss
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/3339/rlFcjEdI.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-16 18:23:24.000000000 Z
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-26 08:54:29.000000000 Z
+- name: React Router
+  description: A complete routing solution for React.js
+  website_url: https://github.com/rackt/react-router
+  version: 6.21.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: JavaScript Framework Components
+  image_url: https://img.stackshare.io/service/3350/8261421.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-26 08:54:29.000000000 Z
+- name: Redux
+  description: Predictable state container for JavaScript apps
+  website_url: https://redux.js.org/
+  version: 5.0.1
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: State Management Library
+  image_url: https://img.stackshare.io/service/4074/13142323.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-19 12:11:17.000000000 Z
+- name: Tailwind CSS
+  description: A utility-first CSS framework for rapid UI development
+  website_url: https://tailwindcss.com
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Front-End Frameworks
+  image_url: https://img.stackshare.io/service/8158/default_660b7c41c3ba489cb581eec89c04655404258c19.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-16 18:23:24.000000000 Z
+- name: Firebase
+  description: The Realtime App Platform
+  website_url: https://firebase.google.com/
+  open_source: false
+  hosted_saas: true
+  category: Application Hosting
+  sub_category: Realtime Backend / API
+  image_url: https://img.stackshare.io/service/116/cZLxNFZS.jpg
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-26 08:54:29.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-16 18:23:24.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta
+  detection_source: Repo Metadata
+- name: Vite
+  description: Native-ESM powered web dev build tool
+  website_url: https://vitejs.dev/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/21547/default_1aeac791cde11ff66cc0b20dcc6144eeb185c905.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-16 18:23:24.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-16 18:23:24.000000000 Z
+- name: "@types/react"
+  description: TypeScript definitions for React
+  package_url: https://www.npmjs.com/@types/react
+  version: 18.2.46
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15894/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-26 08:54:29.000000000 Z
+- name: "@types/react-dom"
+  description: TypeScript definitions for React
+  package_url: https://www.npmjs.com/@types/react-dom
+  version: 18.2.18
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15946/default_54b691c123fc8979741e800e4dcd3936c0f3b246.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-26 08:54:29.000000000 Z
+- name: eslint-plugin-react
+  description: React specific linting rules for ESLint
+  package_url: https://www.npmjs.com/eslint-plugin-react
+  version: 7.33.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15817/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-26 08:54:29.000000000 Z
+- name: eslint-plugin-react-hooks
+  description: ESLint rules for React Hooks
+  package_url: https://www.npmjs.com/eslint-plugin-react-hooks
+  version: 4.6.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16149/default_1f3a2fc7d882e29a43394ecdf491b8989ea3f0fa.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-26 08:54:29.000000000 Z
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-26 08:54:29.000000000 Z
+- name: react-icons
+  description: SVG React icons of popular icon packs using ES6 imports
+  package_url: https://www.npmjs.com/react-icons
+  version: 4.12.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16909/default_7b9968788548874538c601457e8dcd9c74bd2051.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-26 08:54:29.000000000 Z
+- name: react-redux
+  description: Official React bindings for Redux
+  package_url: https://www.npmjs.com/react-redux
+  version: 9.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15984/default_f49d4c116f8ea0155f4d92673b084378bba02760.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-26 08:54:29.000000000 Z
+- name: react-router-dom
+  description: DOM bindings for React Router
+  package_url: https://www.npmjs.com/react-router-dom
+  version: 6.21.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16025/default_e25d1fbb04a118c79fb444294461417342bd03bf.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-26 08:54:29.000000000 Z
+- name: tailwindcss
+  description: A utility-first CSS framework for rapidly building custom user interfaces
+  package_url: https://www.npmjs.com/tailwindcss
+  version: 3.4.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17398/default_2cd7ed1c123f2fca074a6f4b16c4e73d5bfe82be.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-16 18:23:24.000000000 Z
+- name: uuid
+  description: RFC4122
+  package_url: https://www.npmjs.com/uuid
+  version: 8.3.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15916/default_e0a4fb1126d7400f419f0931cf1669947a5bc552.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-19 12:11:17.000000000 Z
+- name: vite
+  description: Native-ESM powered web dev build tool
+  package_url: https://www.npmjs.com/vite
+  version: 5.0.10
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/npm/image.png
+  detection_source_url: https://github.com/vignesh7701/CodeEditor-Beta/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: vick7701
+  last_updated_on: 2024-01-16 18:23:24.000000000 Z
+  vulnerabilities:
+  - name: Vite dev server option `server.fs.deny` can be bypassed when hosted on case-insensitive
+      filesystem
+    cve_id: CVE-2024-23331
+    cve_url: https://github.com/advisories/GHSA-c24v-8rfc-w8vw
+    detected_date: Jan 20
+    severity: high
+    first_patched: 5.0.12
