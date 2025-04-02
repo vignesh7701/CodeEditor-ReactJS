@@ -20,8 +20,8 @@ const App = () => {
     const unsubscribe = auth.onAuthStateChanged((userCred) => { 
       if (userCred) { 
         console.log(userCred?.providerData[0]);
-        setDoc(doc(db, "users", userCred?.uid), userCred?.providerData[0]).
-          then(() => {
+        setDoc(doc(db, "users", userCred?.uid), userCred?.providerData[0])
+          .then(() => {
             dispatch(SET_USER(userCred?.providerData[0]));
             navigate("/home/projects", { replace: true });
             

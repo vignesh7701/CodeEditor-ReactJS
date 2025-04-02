@@ -27,13 +27,13 @@ const Home = () => {
     <>
       <div
         className={` ${
-          sideMenu ? "w-2" : "flex-[.3] xl:flex-[.3]"
+          sideMenu ? "w-2" : "flex-[.3] xl:flex-[.2]"
         }  min-h-screen max-h-screen relative bg-secondary px-3 py-4 flex flex-col items-center justify-start gap-4 transition-all duration-200 ease-in-out z-10`}
       >
         <motion.div
           whileTap={{ scale: 0.9 }}
           onClick={() => setSideMenu(!sideMenu)}
-          className="w-8 h-8 bg-secondary rounded-tr-lg rounded-br-lg absolute -right-6 flex items-center justify-center cursor-pointer "
+          className="w-8 h-8 bg-secondary rounded-tr-lg rounded-br-lg absolute -right-4 flex items-center justify-center cursor-pointer "
         >
           {sideMenu ? (
             <FaCircleArrowRight className=" text-white text-xl" />
@@ -44,7 +44,7 @@ const Home = () => {
 
         <div className=" overflow-hidden w-full flex flex-col gap-4">
           <Link to={"/home"}>
-            <img src={Logo} alt="logo" className="object-contain w-28 h-auto" />
+            <img src={Logo} alt="logo" className="object-contain w-24 h-auto" />
           </Link>
           <Link to={"/newProject"}>
             <div className=" px-2 py-2 flex items-center justify-center rounded-md border group border-white cursor-pointer group hover:border-cyan-50">

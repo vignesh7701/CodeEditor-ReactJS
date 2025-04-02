@@ -15,7 +15,7 @@ const UserProfile = () => {
       <div className="w-7 h-7 md:w-12 md:h-10 flex items-center justify-center overflow-hidden rounded-lg cursor-pointer bg-sky-600">
         {user?.photoURL ? (
           <>
-            <moiton.img
+            <motion.img
               whleHover={{ scale: 1.2 }}
               src={user?.photoURL}
               alt={user?.displayName}

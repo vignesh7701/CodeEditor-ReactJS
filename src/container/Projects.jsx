@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { MdBookmark } from 'react-icons/md';
 
@@ -23,13 +23,12 @@ const Projects = () => {
     else {
       setFilter(null)
     }
-  },[searchTerm])
+  },[searchTerm, projects])
 
   return (
     <div className="w-full py-3 flex items-center justify-center gap-4 flex-wrap">
       {filter ? (
         <>
-          {" "}
           {filter &&
             filter.map((project, index) => (
               <ProjectCard key={project.id} project={project} index={index} />
@@ -37,7 +36,6 @@ const Projects = () => {
         </>
       ) : (
         <>
-          {" "}
           {projects &&
             projects.map((project, index) => (
               <ProjectCard key={project.id} project={project} index={index} />
